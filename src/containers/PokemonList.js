@@ -1,5 +1,5 @@
 const PokemonList = () => {
-  return <div></div>;
+  return <div>PokemonList</div>;
 };
 
 export default PokemonList;
