@@ -12,7 +12,7 @@ const Pokemon = (props) => {
     dispatch(GetPokemon(pokemonName));
   }, []);
 
-  const showData = () => {
+  const ShowData = () => {
     if (!_.isEmpty(pokemonState.data[pokemonName])) {
       const pokeData = pokemonState.data[pokemonName];
       return (
@@ -58,7 +58,7 @@ const Pokemon = (props) => {
   return (
     <div className={"poke"}>
       <h1>{pokemonName}</h1>
-      {showData()}
+      <ShowData />
     </div>
   );
 };
