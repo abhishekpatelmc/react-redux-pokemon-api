@@ -6,7 +6,7 @@ export const GetPokemonList = (page) => async (dispatch) => {
       type: "POKEMON_LIST_LOADING",
     });
 
-    const perPage = 15;
+    const perPage = 18;
     const offset = page * perPage - perPage;
 
     const res = await axios.get(
