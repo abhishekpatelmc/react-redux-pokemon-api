@@ -46,14 +46,33 @@ nav a {
   margin: auto;
 }
 
-.pokemon-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.poke h1 {
+  text-align: center;
 }
 
-.pokemon-wrapper .item {
-  width: 30%;
+.pokemon-wrapper {
+  width: 100%;
+}
+
+.pokemon-wrapper .image {
+  width: 100%;
+
+  border: solid 2px red;
+}
+.pokemon-wrapper .image img {
+  width: 25%;
+  border: solid 2px red;
+}
+
+.pokemon-wrapper .stats {
+  width: 90%;
+}
+.pokemon-wrapper .stats-bar {
+  display: flex;
+}
+
+.pokemon-wrapper .ability {
+  width: 90%;
 }
 
 .search-wrapper {
@@ -70,5 +89,5 @@ nav a {
   margin: auto;
   list-style: none;
   justify-content: space-between;
-  padding: 10;
+  padding: 0;
 }
