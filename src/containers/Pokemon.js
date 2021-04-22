@@ -25,22 +25,24 @@ const Pokemon = (props) => {
             <img src={pokeData.sprites.front_shiny} alt="" />
             <img src={pokeData.sprites.back_shiny} alt="" />
           </div>
-          <div className="stats">
-            <h1>Stats</h1>
-            {pokeData.stats.map((el) => {
-              return (
-                <div className="stats-bar">
-                  <label>{el.stat.name}</label>
-                  <progress max="100" value={el.base_stat} />
-                </div>
-              );
-            })}
-          </div>
-          <div className="ability">
-            <h1>Abilities</h1>
-            {pokeData.abilities.map((el) => {
-              return <p>{el.ability.name}</p>;
-            })}
+          <div className="stat-abi">
+            <div className="stats">
+              <h1>Stats</h1>
+              {pokeData.stats.map((el) => {
+                return (
+                  <div className="stats-bar">
+                    <label>{el.stat.name}</label>
+                    <progress max="100" value={el.base_stat} />
+                  </div>
+                );
+              })}
+            </div>
+            <div className="ability">
+              <h1>Abilities</h1>
+              {pokeData.abilities.map((el) => {
+                return <p>{el.ability.name}</p>;
+              })}
+            </div>
           </div>
         </div>
       );

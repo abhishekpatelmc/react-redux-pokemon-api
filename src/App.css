@@ -89,23 +89,39 @@ nav a {
 
 .pokemon-wrapper .image {
   width: 100%;
-
-  border: solid 2px red;
 }
 .pokemon-wrapper .image img {
-  width: 25%;
-  border: solid 2px red;
+  width: 50%;
+}
+
+.pokemon-wrapper .stat-abi {
+  margin-bottom: 50px;
 }
 
 .pokemon-wrapper .stats {
-  width: 90%;
+  width: 100%;
+  position: relative;
 }
-.pokemon-wrapper .stats-bar {
-  display: flex;
+.pokemon-wrapper .stats-bar label {
+  margin-left: 6%;
+  font-size: 1em;
+}
+
+.pokemon-wrapper .stats-bar progress {
+  position: absolute;
+  width: 30%;
+  height: 20px;
+  left: 56%;
 }
 
 .pokemon-wrapper .ability {
-  width: 90%;
+  width: 100%;
+  left: 40%;
+}
+
+.pokemon-wrapper .ability p {
+  margin-left: 6%;
+  font-size: 1em;
 }
 
 .search-wrapper {
@@ -158,5 +174,31 @@ nav a {
   }
   .search-wrapper input {
     width: 30%;
+  }
+  .pokemon-wrapper .image img {
+    width: 25%;
+  }
+  .pokemon-wrapper .stat-abi {
+    display: flex;
+  }
+  .pokemon-wrapper .stats {
+    width: 50%;
+  }
+  .pokemon-wrapper .stats-bar label {
+    margin-left: 20%;
+    font-size: 1.2em;
+  }
+
+  .pokemon-wrapper .stats-bar progress {
+    width: 30%;
+    height: 23px;
+    left: 45%;
+  }
+  .pokemon-wrapper .ability {
+    width: 50%;
+  }
+  .pokemon-wrapper .ability p {
+    margin-left: 25%;
+    font-size: 1.2em;
   }
 }

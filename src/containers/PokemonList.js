@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import _ from "lodash";
-import { GetPokemonList, GetPokemon } from "../actions/PokemonActions";
+import { GetPokemonList } from "../actions/PokemonActions";
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -10,11 +10,6 @@ const PokemonList = (props) => {
   const [search, setSearch] = useState();
   const dispatch = useDispatch();
   const PokemonList = useSelector((state) => state.PokemonList);
-  const pokemonData = useSelector((state) => state.Pokemon);
-  console.log(pokemonData);
-  const tap = (e) => {
-    console.log(e.target.value);
-  };
 
   useEffect(() => {
     FetchData(1);
@@ -22,7 +17,6 @@ const PokemonList = (props) => {
 
   const FetchData = (page = 1) => {
     dispatch(GetPokemonList(page));
-    dispatch(GetPokemon());
   };
 
   const showData = () => {
